@@ -1,0 +1,18 @@
+body, html {
+margin-left:8%;
+margin-right:8%;
+margin-bottom:3%;
+margin-top:3%;
+}
+
+.date {
+  color: gray
+}
+
+.quizHeader {
+  text-align: center
+}
+
+.questions {
+  margin-top: 40px
+}
