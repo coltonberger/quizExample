@@ -16,3 +16,15 @@ margin-top:3%;
 .questions {
   margin-top: 40px
 }
+
+#question {
+  font-weight: bold
+}
+
+.form-check {
+  margin-bottom: 5px
+}
+
+.lastQ {
+  margin-bottom: 20px
+}
