@@ -28,3 +28,23 @@ margin-top:3%;
 .lastQ {
   margin-bottom: 20px
 }
+
+.resultsButton {
+  text-align: center
+}
+
+.progress {
+  height: 30px !important
+}
+
+.progress {
+  margin-top: 20px
+}
+
+.resultsMeaning {
+  margin-top: 20px
+}
+
+.title {
+  text-align: center
+}
