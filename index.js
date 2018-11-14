@@ -33,17 +33,17 @@ function changeProgressBar(object) {
   let redColor = document.getElementById("red")
   let blueColor = document.getElementById("blue")
   let tealColor  = document.getElementById("teal")
-  let goldColor  = document.getElementById("golden")
+  let goldColor  = document.getElementById("gold")
   let greenColor  =  document.getElementById("green")
-  console.log("redColor", redColor)
+  //console.log("redColor", redColor)
 
   let colorCountObj = countColorFequency(object)
-  console.log("colorCountObj", colorCountObj)
+  //console.log("colorCountObj", colorCountObj)
 
   for(let color in colorCountObj) {
-    console.log("color", color)
+    //console.log("color", color)
     let percentage = colorCountObj[color] * 10
-    console.log("percentage", percentage)
+    //console.log("percentage", percentage)
     if (color === 'red') {
       redColor.style.width = `${percentage}%`;
       redColor.innerHTML = `${percentage}%`
@@ -56,7 +56,7 @@ function changeProgressBar(object) {
       tealColor.style.width = `${percentage}%`;
       tealColor.innerHTML = `${percentage}%`
     }
-    if (color === 'golden') {
+    if (color === 'gold') {
       goldColor.style.width =  `${percentage}%`;
       goldColor.innerHTML = `${percentage}%`
     }
@@ -65,17 +65,14 @@ function changeProgressBar(object) {
       greenColor.innerHTML = `${percentage}%`
     }
   }
-
 }
 
 
-
-
-// function checkArrayLength(array){
-//   let pickedArray = getRadioValue(array);
-//   if (pickedArray.length < 10) {
-//     console.log ("System need all sections anwsered. Please complete quiz.")
-//   } else {
-//     return largestCount(pickedArray);
-//   }
-// }
+function checkArrayLength(array){
+  let pickedArray = getRadioValue(array);
+  if (pickedArray.length < 10) {
+    console.log ("System need all sections anwsered. Please complete quiz.")
+  } else {
+    return changeProgressBar(pickedArray);
+  }
+}
